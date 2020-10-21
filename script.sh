@@ -1,18 +1,14 @@
 #!/bin/bash
 
-# TODO: Check if run as root.
-# TODO: Add a check that the username supplied exists.
-
-# Checking if the username was supplied
-if [[ -z "$1" ]]; then
-    echo "No username was specified." 1>&2
-    exit 1
-fi
-
 # Updating Apt Cache
-apt update -y && apt upgrade -y
+sudo apt update -y && sudo apt upgrade -y
 
 # ZSH Setup
-apt install -y zsh
+sudo apt install -y zsh
 chsh -s $(which zsh)
-chsh -s $(which zsh) $1
+
+# Oh My ZSH Setup
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+cp -f .zshrc ~
+cp -f .p10k.zsh ~
