@@ -1,0 +1,23 @@
+[/]
+default='856ce6d7-459c-4637-baf8-2053c3d2ab19'
+list=['856ce6d7-459c-4637-baf8-2053c3d2ab19', 'd3a009d2-570c-40c7-a651-b89cfaa11033']
+
+[:856ce6d7-459c-4637-baf8-2053c3d2ab19]
+allow-bold=true
+background-color='#282828282828'
+bold-color='#ebebdbdbb2b2'
+bold-color-same-as-fg=true
+font='MesloLGS NF 12'
+foreground-color='#ebebdbdbb2b2'
+highlight-background-color='#'
+highlight-colors-set=true
+highlight-foreground-color='#'
+palette=['#282828282828', '#cccc24241d1d', '#989897971a1a', '#d7d799992121', '#454585858888', '#b1b162628686', '#68689d9d6a6a', '#a8a899998484', '#929283837474', '#fbfb49493434', '#b8b8bbbb2626', '#fafabdbd2f2f', '#8383a5a59898', '#d3d386869b9b', '#8e8ec0c07c7c', '#ebebdbdbb2b2']
+use-theme-background=false
+use-theme-colors=false
+use-theme-transparency=false
+visible-name='Gruvbox Dark'
+
+[:d3a009d2-570c-40c7-a651-b89cfaa11033]
+font='MesloLGS NF 12'
+visible-name='Pop OS'
