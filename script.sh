@@ -16,5 +16,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 cp -f .zshrc ~
 cp -f .p10k.zsh ~
 
-# Gnome Terminal Profiles
-dconf load /org/gnome/terminal/legacy/profiles:/ < terminal-profiles/gnome-terminal-profiles.dconf
+# Alacritty Setup
+sudo apt install alacritty
+mkdir -p $HOME/.config/alacritty
+cp alacritty.yml $HOME/.config/alacritty
