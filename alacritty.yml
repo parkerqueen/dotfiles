@@ -1,6 +1,14 @@
 window:
-  # Allow terminal applications to change Alacritty's window title.
-  dynamic_title: true
+    # Window dimensions (changes require restart)
+    #
+    # Specified in number of columns/lines, not pixels.
+    # If both are `0`, this setting is ignored.
+    dimensions:
+        columns: 80
+        lines: 30
+
+    # Allow terminal applications to change Alacritty's window title.
+    dynamic_title: true
 
 # Colors (Gruvbox dark)
 colors:
