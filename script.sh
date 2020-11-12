@@ -20,3 +20,6 @@ cp -f .p10k.zsh ~
 sudo apt install alacritty
 mkdir -p $HOME/.config/alacritty
 cp alacritty.yml $HOME/.config/alacritty
+
+# tmux Setup
+sudo apt install tmux
