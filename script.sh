@@ -23,3 +23,10 @@ cp alacritty.yml $HOME/.config/alacritty
 
 # tmux Setup
 sudo apt install tmux
+
+# XMonad Setup
+sudo apt install xmonad libghc-xmonad-contrib-dev dmenu
+sudo apt install xmobar compton nitrogen
+cp xmonad.hs ~/.xmonad
+mkdir ~/.config/xmobar
+cp xmobarrc ~/.config/xmobar
