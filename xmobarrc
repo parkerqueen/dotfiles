@@ -1,4 +1,4 @@
-Config { font = "xft:Meslo LGS:pixelsize=16"
+Config { font = "xft:MesloLGS NF:pixelsize=16"
        , additionalFonts = []
        , borderColor = "black"
        , border = TopB
