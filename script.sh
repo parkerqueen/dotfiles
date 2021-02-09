@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Installing "Source Code Pro" font family & lxappearance
+sudo cp -r source-code-pro/ /usr/share/fonts/truetype/
+sudo apt install -y lxappearance
+
 # Updating Apt Cache
 sudo apt update -y && sudo apt upgrade -y
 
@@ -25,8 +29,8 @@ cp alacritty.yml $HOME/.config/alacritty
 sudo apt install tmux
 
 # XMonad Setup
-sudo apt install xmonad libghc-xmonad-contrib-dev dmenu
-sudo apt install xmobar compton nitrogen
+sudo apt install -y xmonad libghc-xmonad-contrib-dev dmenu
+sudo apt install -y xmobar compton nitrogen
 cp xmonad.hs ~/.xmonad
 mkdir ~/.config/xmobar
 cp xmobarrc ~/.config/xmobar
