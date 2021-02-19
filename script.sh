@@ -31,6 +31,6 @@ sudo apt install tmux
 # XMonad Setup
 sudo apt install -y xmonad libghc-xmonad-contrib-dev dmenu
 sudo apt install -y xmobar compton nitrogen
+mkdir ~/.xmonad ~/.config/xmobar
 cp xmonad.hs ~/.xmonad
-mkdir ~/.config/xmobar
 cp xmobarrc ~/.config/xmobar
