@@ -1,14 +1,13 @@
 #!/bin/bash
 
-# Installing "Source Code Pro" font family & lxappearance
+# Installing "Source Code Pro" font family
 sudo cp -r source-code-pro/ /usr/share/fonts/truetype/
-sudo apt install -y lxappearance
 
 # Updating Apt Cache
-sudo apt update -y && sudo apt upgrade -y
+sudo pacman -Syu
 
 # ZSH Setup
-sudo apt install -y zsh
+sudo pacman -S zsh
 chsh -s $(which zsh)
 
 # Oh My ZSH Setup
@@ -21,16 +20,9 @@ cp -f .zshrc ~
 cp -f .p10k.zsh ~
 
 # Alacritty Setup
-sudo apt install alacritty
+sudo pacman -S alacritty
 mkdir -p $HOME/.config/alacritty
 cp alacritty.yml $HOME/.config/alacritty
 
 # tmux Setup
-sudo apt install tmux
-
-# XMonad Setup
-sudo apt install -y xmonad libghc-xmonad-contrib-dev dmenu
-sudo apt install -y xmobar compton nitrogen
-mkdir ~/.xmonad ~/.config/xmobar
-cp xmonad.hs ~/.xmonad
-cp xmobarrc ~/.config/xmobar
+sudo pacman -S tmux
