@@ -26,3 +26,4 @@ cp alacritty.yml $HOME/.config/alacritty
 
 # tmux Setup
 sudo pacman -S tmux
+cp -f .tmux.conf ~
