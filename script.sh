@@ -4,10 +4,10 @@
 sudo cp -r source-code-pro/ /usr/share/fonts/truetype/
 
 # Updating Apt Cache
-sudo pacman -Syu
+sudo apt update
 
 # ZSH Setup
-sudo pacman -S zsh
+sudo apt install -y zsh
 chsh -s $(which zsh)
 
 # Oh My ZSH Setup
@@ -20,10 +20,10 @@ cp -f .zshrc ~
 cp -f .p10k.zsh ~
 
 # Alacritty Setup
-sudo pacman -S alacritty
+sudo apt install -y alacritty
 mkdir -p $HOME/.config/alacritty
 cp alacritty.yml $HOME/.config/alacritty
 
 # tmux Setup
-sudo pacman -S tmux
+sudo apt install -y tmux
 cp -f .tmux.conf ~
